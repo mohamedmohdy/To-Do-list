@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background: linear-gradient(120deg, #3ec0b4, #d748f9);
+  min-height: 100vh;
+  header {
+    width: 100%;
+    h1 {
+      text-align: center;
+      color: white;
+      padding: 15px 0px;
+    }
+  }
+  main {
+    form {
+      input {
+        padding: 5px;
+        outline: none;
+        width: 20%;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+      }
+      button {
+        padding: 8px;
+        background-color: white;
+        border: none;
+        i {
+          font-size: 20px;
+          border: none;
+          color: #d748f9;
+          cursor: pointer;
+          transition: 1s all ease-in-out;
+        }
+      }
+      button:hover {
+        background-color: #d748f9;
+        i {
+          color: white;
+        }
+      }
+    }
+    form,
+    .contanirTaskes {
+      display: flex;
+      justify-content: center;
+    }
+    .contanirTaskes {
+      .row_list {
+        min-width: 30%;
+        margin-top: 50px;
+        position: relative;
+        margin: 10px 0px;
+      }
+      .li_item {
+        display: flex;
+        background-color: #fff;
+        margin: 10px 0px;
+        transition: 0.9s all ease-in-out;
+        .task_name {
+          /* important tecknic for you  */
+          flex: 1;
+        }
+        button {
+          i {
+            padding: 8px;
+            font-size: 15px;
+          }
+        }
+        .check_ptn,
+        .trash_ptn,
+        .AgainTask {
+          background-color: #3ec0b4;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        .trash_ptn {
+          background-color: #940d57;
+        }
+        .AgainTask {
+          color: white;
+          background-color: rgb(212, 212, 48);
+        }
+        .task_name {
+          display: flex;
+          align-items: center;
+          text-indent: 10px;
+        }
+      }
+    }
+  }
+  .compleated {
+    opacity: 0.3;
+    text-decoration: line-through;
+    color: red;
+  }
+}
